@@ -13,4 +13,6 @@ $ terraform validate
 $ terraform graph | dot -Tpng > graph.png
 // get module
 $ terraform get
+// indicate variable value
+$ terraform plan -var 'environment=dev'
 ```
