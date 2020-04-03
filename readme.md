@@ -1,6 +1,7 @@
 ```
 // format
 $ terraform fmt
+$ terraform fmt -recursive
 // preview
 $ terraform plan
 // apply
