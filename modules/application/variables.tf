@@ -7,3 +7,4 @@ variable "instance_type" {
     prod = "t2.large"
   }
 }
+variable "extra_sgs" { default = [] }
