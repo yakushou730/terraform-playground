@@ -15,4 +15,6 @@ $ terraform graph | dot -Tpng > graph.png
 $ terraform get
 // indicate variable value
 $ terraform plan -var 'environment=dev'
+// using variable files
+terraform plan -var-file=./development.tfvars
 ```
