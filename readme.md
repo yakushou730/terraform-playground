@@ -11,5 +11,6 @@ $ terraform destroy
 $ terraform validate
 // graph
 $ terraform graph | dot -Tpng > graph.png
-
+// get module
+$ terraform get
 ```
