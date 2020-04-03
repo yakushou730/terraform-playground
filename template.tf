@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-northeast-1"
+  region = var.region
 }
 
 resource "aws_vpc" "my_vpc" {
@@ -23,4 +23,5 @@ module "mighty_trousers" {
   vpc_id = aws_vpc.my_vpc.id
   subnet_id = aws_subnet.public.id
   name = "MightyTrousers"
+  environment = var.environment
 }

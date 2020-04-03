@@ -22,7 +22,7 @@ resource "aws_security_group" "allow_http" {
 
 resource "aws_instance" "app-server" {
   ami           = "ami-07f4cb4629342979c"
-  instance_type = "t2.micro"
+  instance_type = lookup(var.instance_type, var.environment )
   subnet_id = var.subnet_id
   vpc_security_group_ids = [aws_security_group.allow_http.id]
   tags = {
